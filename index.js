@@ -29,7 +29,20 @@ function fun(event){
     const className = classNameList[1];
 
     if(document.querySelector("." + className).innerHTML === "" && winner === false){
+        //document.querySelector("." + className).innerHTML = activePlayer;
+        console.log( `<p>${activePlayer}</p>`);
+        
+
+        /*
+        if(activePlayer === "X"){
+            document.querySelector("." + className).innerHTML = `<p class="player1">${activePlayer}</p>`;
+        }else{
+            document.querySelector("." + className).innerHTML = `<p class="player2">${activePlayer}</p>`;
+        }
+        */
+
         document.querySelector("." + className).innerHTML = activePlayer;
+
         
         numMoves++;
        
@@ -42,7 +55,7 @@ function fun(event){
             
         }
 
-        if(numMoves == 9){
+        if(!(winner) && numMoves == 9){
             document.querySelector('p').innerHTML = 'It\'s a tie!';
             document.getElementById('play-again').style.display = 'block';
         }

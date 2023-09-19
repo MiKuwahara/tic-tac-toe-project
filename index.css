@@ -1,50 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+body {
+  font-size: 14px;
+  height: 100vh;
+  background: linear-gradient(to bottom, orange, rgb(205, 95, 95));
+
+}
+
 .main-container {
-  padding: 10% 5%;
-  background-color: #f2ebe3;
+  margin-top: 5%;
   display:flex;
   flex-direction: column;
   align-items: center;
+  /*
+    background-color: #f2ebe3;
+  background: linear-gradient(135deg, #8052ec, #d161ff);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  */
 }
 
 h1 {
   margin-bottom: 20px;
+  font-size: 3.5rem;
 }
 
 p {
   margin-bottom: 20px;
+  font-family: 'Creepster', cursive;
+  font-size: 2rem;
+  text-decoration-line: underline;
 }
 
 .grid-container {
-    display: inline-grid;
-    grid-template-columns: auto auto auto;
-    row-gap: 1px;
-    column-gap: 1px;
-    background-color:black;
-    padding: 1px;
-  }
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 5px;
+  column-gap: 5px;
+  padding: 1px;
   
-  .grid-item {
+    /*
+    background-color:rgb(174, 19, 60);
+    width: 70vmin;
+    height: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+    */
+}
+  
+.grid-item {
+    /*
     background-color:white;
     text-align: center;
     padding: 20px;
     font-size: 10px;
-  }
+    color: #d161ff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    */
+  background: #ffffff;
+  height: 15vmin;
+  width: 15vmin;
+  border: none;
+  border-radius: 8px;
+  font-size: 60px;
+}
 
-  #play-again {
-    margin-top: 30px;
-    padding: 5px 15px;
-    border-radius: 10px;
-    background-color: hsl(0, 52%, 81%);
-    cursor: pointer;
-    border: none;
-    display: none;
-  }
+#play-again {
+  margin-top: 50px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: none;
+  display: none;
+}
 
  
 
